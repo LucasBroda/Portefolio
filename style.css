@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap');
+
+
+:root {
+    --couleur-de-fond: #efe7e5 ;
+    --couleur-text: black;
+}
+
+body {
+    font-family: 'Unbounded', cursive;
+    margin: 3% 15%;
+    background-color : var(--couleur-de-fond);
+    color : var(--couleur-text);
+}
+
+p {
+    line-height: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-weight: 500;
+}
+
+nav ul li {
+    margin-left: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+nav ul li span {
+    position: absolute;
+    top: -5px;
+    right: -30px;
+}
+
+header {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .PartieGauche {
+    flex: 6;
+    margin-right: 50px;
+}
+
+header .PartieGauche small {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header .PartieGauche h1 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+header .PartieGauche .links {
+    margin-top: 40px;
+}
+
+header .PartieGauche .links a{
+    text-decoration: none;
+    color: inherit;
+    position:relative;
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+header .PartieDroite {
+    flex: 5;
+}
+
+header .PartieDroite img {
+    width: 100%;
+    height: 600px;
+    
+}
+
+header .PartieDroite .photo {
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+    border-radius: 70%;
+    clip-path:ellipse(50% 40%);
+}
+
+.APropos {
+    margin-top: 100px;
+}
+
+.APropos p {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 200;
+}
+
+.Projets { 
+    margin-top: 60px;
+}
+
+.Projets .LesProjets {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.Projets .LesProjets .PartieImage  {
+    margin-right: 40px;
+}
+
+.Projets .LesProjets .PartieImage img {
+    height: 200px;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+
