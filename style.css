@@ -134,4 +134,20 @@ footer p {
     font-size: 15px;
 }
 
+@media screen and (max-width:880px) {
+    .LesProjets .PartieImage {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:621px) {
+    header{
+        flex-direction: column;
+    }
+
+    .Projets .LesProjets .PartieImage{
+        width: 100%;
+    }
+}
+
 
