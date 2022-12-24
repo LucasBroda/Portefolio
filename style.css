@@ -4,6 +4,7 @@
 :root {
     --couleur-de-fond: #efe7e5 ;
     --couleur-text: black;
+    --hauteur-menu: 60px;
 }
 
 body {
@@ -18,9 +19,10 @@ p {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
@@ -29,6 +31,14 @@ nav ul {
     flex-wrap: wrap;
     list-style-type: none;
     font-weight: 500;
+    list-style-type: none;
+}
+
+nav > ul {
+    display: flex;
+    text-align: center;
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
+    height: var(--hauteur-menu);
 }
 
 nav ul li {
@@ -38,11 +48,35 @@ nav ul li {
     position: relative;
 }
 
-nav ul li span {
-    position: absolute;
-    top: -5px;
-    right: -30px;
+nav > ul > li {
+    background-color: #efe7e5;
+    position: relative;
+    height: 100%;
+    flex: 1;
 }
+
+nav > ul > li > a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-deroulant > a:after{
+    font-size: 15px;
+    margin-left: 7px;
+    display: inline-block;
+}
+
+nav > ul > li:hover > a{
+    color: #2169EC;
+}
+
 
 header {
     margin-top: 80px;
@@ -124,7 +158,18 @@ header .PartieDroite .photo {
 
 .Projets .LesProjets .PartieImage img {
     height: 200px;
+    
 }
+
+.Projets .LesProjets .PartieDescription .liens a{
+    text-decoration: none;
+    color: inherit;
+    position:relative;
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+
 
 footer {
     margin-top: 100px;
@@ -138,6 +183,10 @@ footer p {
     .LesProjets .PartieImage {
         flex-wrap: wrap;
     }
+
+    .CV {
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width:621px) {
@@ -148,6 +197,14 @@ footer p {
     .Projets .LesProjets .PartieImage{
         width: 100%;
     }
+
+    .CV {
+        width: 100%;
+    }
+}
+
+.CV {
+    text-align: center;
 }
 
 

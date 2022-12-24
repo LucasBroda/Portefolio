@@ -1,4 +1,5 @@
 Corriger les fautes
 Mettre une image de fond 
-Faire un menu ?
+Faire un menu ? V
 Faire en sorte de pouvoir afficher les éléments au fur et à mesure que l'on scroll sur la page
+Rajouter des projets en PHP (site Marathon)
