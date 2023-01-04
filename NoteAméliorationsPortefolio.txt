@@ -1,5 +1,11 @@
 Corriger les fautes
-Mettre une image de fond 
-Faire un menu ? V
-Faire en sorte de pouvoir afficher les éléments au fur et à mesure que l'on scroll sur la page
+Mettre une image de fond (chercher d'abord une belle image)
+Faire en sorte de pouvoir afficher les éléments au fur et à mesure que l'on scroll sur la page (en cours)
 Rajouter des projets en PHP (site Marathon)
+Repositionner les images dans la page projets
+
+Pas obligatoire : 
+
+mettre un peu plus d'éléments sur les pages pour faire moins vide ?
+
+Chercher des images avec des fonds qui s'adaptent à celui du site 

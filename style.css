@@ -157,7 +157,7 @@ header .PartieDroite .photo {
 }
 
 .Projets .LesProjets .PartieImage img {
-    height: 300px;
+    height: 200px;
     
 }
 
@@ -191,11 +191,12 @@ footer p {
 
 @media screen and (max-width:621px) {
     header{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .Projets .LesProjets .PartieImage{
         width: 100%;
+        flex-direction: column-reverse;
     }
 
     .CV {
@@ -207,19 +208,6 @@ footer p {
     text-align: center;
 }
 
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-
-.Projets {
-    animation: fadein 2s;
-    -moz-animation: fadein 2s;
-}
 
 .reveal {
     opacity: 0;
@@ -229,7 +217,7 @@ footer p {
 .reveal-visible {
     opacity: 1;
     transform: translateY(0);
-    transition: .3s;
+    transition: 1s cubic-bezier(.5,0,0,1);
 }
 
 
