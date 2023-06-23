@@ -120,7 +120,7 @@ header .PartieDroite {
 
 header .PartieDroite img {
     width: 100%;
-    height: 600px;
+    height: auto;
     
 }
 
@@ -208,6 +208,14 @@ footer p {
     text-align: center;
 }
 
+.LienCv a{
+    text-decoration: none;
+    color: inherit;
+    position:relative;
+    margin-right: 40px;
+    font-weight: bold;
+}
+
 
 .reveal {
     opacity: 0;
@@ -220,4 +228,27 @@ footer p {
     transition: 1s cubic-bezier(.5,0,0,1);
 }
 
+.mainContainer {
+    margin: 0;
+    padding: 0;
+}
 
+.imageProjets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.parties {
+    position: relative;
+    margin: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;    
+    border-radius: 8px;
+}
+.parties img{
+    width: 300px;
+    height: 250px;
+}
